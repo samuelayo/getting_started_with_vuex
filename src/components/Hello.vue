@@ -10,7 +10,7 @@
                     <li class="ui-state-default" v-for="todo in not_done_todos">
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" @click="done_todo(todo.todo)"  :value="todo.todo" />{{todo.todo}}</label>
+                                <input type="checkbox" @click="done_todo(todo.todo)"  :value="todo.todo" :checked="todo.status" />{{todo.todo}}</label>
                         </div>
                     </li>
                 </ul>
